@@ -34,13 +34,13 @@ export default function MainContent({
 
       {/* ── KOLOM KIRI ── */}
       <div className="flex-[2.2] flex flex-col gap-3 min-h-0 overflow-hidden">
-        <div className="flex-shrink-0" style={{ height: "18%" }}>
+        <div className="flex-shrink-0" style={{ height: "15%" }}>
           <CardListStats data={cardList} />
         </div>
-        <div className="flex-shrink-0" style={{ height: "20%" }}>
+        <div className="flex-shrink-0" style={{ height: "25%" }}>
           <PengumumanPanel items={pengumuman} intervalDetik={intervalPengumuman} />
         </div>
-        <div className="flex-1 min-h-0 overflow-hidden">
+        <div className="flex-shrink-0" style={{ height: "55%" }}>
           <GrafikSiswaPerKelas items={statistikPerKelas} />
         </div>
       </div>
