@@ -30,14 +30,14 @@ export default function MainContent({
   intervalPengumuman = 10,
 }: MainContentProps) {
   return (
-    <main className="flex-1 flex gap-3 p-4 min-h-0 overflow-hidden">
+    <main className="flex-1 flex gap-3 p-3 min-h-0 overflow-hidden">
 
       {/* ── KOLOM KIRI ── */}
       <div className="flex-[2.2] flex flex-col gap-3 min-h-0 overflow-hidden">
-        <div className="flex-shrink-0" style={{ height: "20%" }}>
+        <div className="flex-shrink-0" style={{ height: "18%" }}>
           <CardListStats data={cardList} />
         </div>
-        <div className="flex-shrink-0" style={{ height: "22%" }}>
+        <div className="flex-shrink-0" style={{ height: "20%" }}>
           <PengumumanPanel items={pengumuman} intervalDetik={intervalPengumuman} />
         </div>
         <div className="flex-1 min-h-0 overflow-hidden">
@@ -48,12 +48,12 @@ export default function MainContent({
       {/* ── KOLOM TENGAH ── */}
       <div className="flex-[1] flex flex-col gap-3 min-h-0 overflow-hidden">
 
-        {/* Kalender Akademik — tinggi fixed kecil */}
-        <div className="flex-shrink-0" style={{ height: "43.5%" }}>
+        {/* Kalender Akademik */}
+        <div className="flex-shrink-0" style={{ height: "52%" }}>
           <KalenderAkademik items={kalenderAkademik} />
         </div>
 
-        {/* Infografis — ambil sisa ruang */}
+        {/* Infografis */}
         <div className="flex-1 min-h-0 overflow-hidden">
           <InfografisSlider items={infografis} />
         </div>
