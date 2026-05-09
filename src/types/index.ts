@@ -57,6 +57,13 @@ export interface Konfigurasi {
   namaMadrasah:       string;
   tagline:            string;
   intervalPengumuman: number;
+  ihtiyatSubuh: number;
+  ihtiyatSyuruq: number;
+  ihtiyatAshar: number;
+  ihtiyatMaghrib: number;
+  ihtiyatIsya: number;
+  sudutSubuh: number;
+  sudutIsya: number;
 }
 
 export interface CardListData {
